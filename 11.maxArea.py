@@ -4,7 +4,6 @@ def maxArea(height):
     i = 0
     j = len(height) - 1
     while i < j:
-        # h 为围成矩阵的 高，取最短边
         h = min(height[i], height[j]);
         maxA = max(maxA, h * (j - i));
         if height[i] < height[j]:
